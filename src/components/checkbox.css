@@ -1,0 +1,27 @@
+.default {
+  width: 15px;
+  display: inline-block;
+  height: 15px;
+  border: 2px solid #999;
+  position: relative;
+  vertical-align: text-bottom;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checked {
+  composes: default;
+  border-color: #dd0000;
+}
+
+.checked:after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 3px;
+  height: 7px;
+  transform:  rotate(45deg);
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
+}

@@ -1,0 +1,26 @@
+.default {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: scale(0);
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 300ms ease-in-out,
+    transform 0ms 300ms;
+}
+
+.show {
+  composes: default;
+  transform: scale(1);
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+@media (min-width: 650px) {
+  .default {
+    visibility: hidden;
+  }
+}

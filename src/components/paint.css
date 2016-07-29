@@ -1,0 +1,56 @@
+.default {
+  position: absolute;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: 1px solid transparent;
+  margin: 10px;
+}
+
+.white {
+  composes: default;
+  border: 1px solid #ddd;
+  background: white;
+  top: 0;
+  left: 0;
+}
+
+.black {
+  composes: default;
+  background: black;
+  top: 0;
+  right: 0;
+}
+
+.yellow {
+  composes: default;
+  background: yellow;
+  bottom: 0;
+  left: 0;
+}
+
+.blue {
+  composes: default;
+  background: blue;
+  bottom: 0;
+  right: 0;
+}
+
+.chosen {
+  border: 1px solid #e67e22;
+  z-index: 51;
+}
+
+.chosen:after {
+  position: absolute;
+  content: '\2714';
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: red;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,17 @@
+.default {
+  padding: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -40px;
+  padding-top: 70px;
+}
+
+.push {
+  composes: default;
+}
+
+@media (min-width: 650px) {
+  .push {
+    padding-right: 290px;
+  }
+}

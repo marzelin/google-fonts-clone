@@ -1,0 +1,36 @@
+.default {
+  box-sizing: border-box;
+  border-top: 1px solid black;
+  margin-left: 40px;
+}
+
+.name {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  line-height: 2;
+}
+
+.author {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  color: grey;
+}
+
+.showcase {
+  font-size: 2em;
+  outline: none;
+}
+
+@media (min-width: 800px) {
+  .default {
+    flex-basis: calc(50% - 40px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .default {
+    flex-basis: calc(33.333% - 40px);
+  }
+}

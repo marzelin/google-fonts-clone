@@ -1,0 +1,33 @@
+.default {
+  position: fixed;
+  z-index: 50;
+  overflow: hidden;
+  top: 8px;
+  right: 50px;
+  background: white;
+  height: 100px;
+  width: 100px;
+  transform: scale(0);
+  opacity: 0;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);
+  transition: transform 200ms , opacity 50ms 100ms, right 0ms 200ms;
+  transform-origin: top right;
+}
+
+.open {
+  composes: default;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 300ms, opacity 50ms;
+}
+
+.openPush {
+  composes: open;
+  right: 300px;
+}
+
+.rotate {
+  width: 100%;
+  height: 100%;
+  transition: transform 300ms;
+}

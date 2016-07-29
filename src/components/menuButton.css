@@ -1,0 +1,10 @@
+.default {
+  composes: default from './bareButton.css';
+  visibility: visible;
+}
+
+@media (min-width: 650px) {
+  .default {
+    visibility: hidden;
+  }
+}

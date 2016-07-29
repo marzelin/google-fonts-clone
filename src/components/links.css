@@ -1,0 +1,26 @@
+.default {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  color: #333;
+  transition: transform 300ms cubic-bezier(0.06, 0.49, 0.2, 1);
+}
+
+.default li {
+  display: none;
+  padding: 5px 0;
+  padding-right: 15px;
+}
+
+@media (min-width: 650px) {
+  .default li {
+    display: block;
+  }
+  .push {
+    composes: default;
+    transform: translateX(-250px);
+  }
+}

@@ -1,0 +1,8 @@
+.default {
+
+}
+
+.category {
+  margin: .5em 0;
+  cursor: pointer;
+}

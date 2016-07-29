@@ -1,0 +1,9 @@
+html {
+  overflow-y: scroll;
+  font-family: Ubuntu;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
